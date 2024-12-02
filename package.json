@@ -1,0 +1,34 @@
+{
+	"name": "advent-of-ts-2024",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"author": {
+		"name": "Muhammad Khan",
+		"email": "me@muhammadkhan.dev",
+		"url": "https://muhammadkhan.dev"
+	},
+	"scripts": {
+		"lint": "eslint . --fix --report-unused-disable-directives && pnpm format && pnpm spellcheck",
+		"format": "prettier --write --log-level silent .",
+		"tsc": "tsc",
+		"spellcheck": "cspell . --quiet",
+		"diag": "tsc --extendedDiagnostics",
+		"trace": "tsc --generateTrace ./trace && npx @typescript/analyze-trace trace"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.1",
+		"@types/node": "^22.10.1",
+		"cspell": "^8.16.1",
+		"eslint": "^9.16.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.3",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-n": "^17.14.0",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"prettier": "^3.4.1",
+		"type-testing": "^0.2.0",
+		"typescript": "^5.7.2"
+	},
+	"packageManager": "pnpm@9.14.4"
+}
