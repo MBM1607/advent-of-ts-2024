@@ -1,6 +1,6 @@
 export type Prettify<T> = {
-	[K in keyof T]: T[K] extends string ? T[K] : Prettify<T[K]>;
-};
+	[K in keyof T]: T[K];
+} & {};
 
 export type Concat<T extends any[], U extends any[]> = [...T, ...U];
 
